@@ -1,9 +1,15 @@
-const namesArray = ['Lisa', 'Kaitlin', 'Jan']
-const event = "surprise"
-function writeCards( namesArray, event ) {
-    let thankYouCards = []
-    for ( let i = 0; i < namesArray.length; i++) {
-        thankYouCards.push('Thank you, ${namesArray[i]}, for the wonderful ${event} gift!')
+function writeCards(names,word) {
+    const array = [];
+    for (let i = 0; i < names.length; i++) {
+    array.push(`Thank you, ${names[i]}, for the wonderful ${word} gift!`)
     }
-    return thankYouCards
+    return array;
+}
+
+function countDown( number ) {
+    let countdown = number;
+    while (countdown > -1) {
+      console.log(countdown);
+      countdown--;
+    }
 }
